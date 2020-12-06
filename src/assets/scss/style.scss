@@ -5,6 +5,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+//  hitam $black
+// orange $orange
+// abu tua $gray-600
+// abu muda $gray-300
+
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -42,3 +47,56 @@
 @import "spinners";
 @import "utilities";
 @import "print";
+
+.brand-text-icon {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: $black;
+}
+
+.brand-text-icon:hover,
+.cart:hover {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    position: relative;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    ul.navbar-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: $black;
+    letter-spacing: 1px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: 16px;
+
+    &:hover {
+        text-decoration: underline;
+        color: $primary;
+    }
+}

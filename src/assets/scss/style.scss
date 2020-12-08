@@ -9,10 +9,12 @@
 // orange $orange
 // abu tua $gray-600
 // abu muda $gray-300
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
 @import "functions";
 @import "variables";
 @import "mixins";
+@import "container-grid";
 @import "root";
 @import "reboot";
 @import "type";
@@ -48,11 +50,15 @@
 @import "utilities";
 @import "print";
 
+body {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
 .brand-text-icon {
     font-size: 26px;
     font-weight: 500;
-    font-family: "Poppins", sans-serif;
-    color: $black;
+    color: $primary;
 }
 
 .brand-text-icon:hover,
@@ -63,6 +69,7 @@
 header {
     width: 100%;
     position: relative;
+    background-color: $gray-300;
 }
 
 .navbar {
@@ -98,5 +105,91 @@ header {
     &:hover {
         text-decoration: underline;
         color: $primary;
+    }
+}
+
+// akhir header
+
+// hero section
+
+.hero {
+    min-height: 500px;
+    width: 100%;
+    background-color: $gray-300;
+    position: relative;
+}
+
+.text-hero {
+    font-size: 18px;
+}
+
+.btn-shop {
+    width: 170px;
+    height: 45px;
+    border-radius: 4px;
+}
+
+.hero-img img {
+    height: 563px;
+}
+
+// akhir hero section
+
+.header-section {
+    margin-top: 70px;
+
+    h4 {
+        font-size: 24px;
+        color: $black;
+    }
+
+    p.text-section {
+        font-size: 16px;
+        color: $gray-600;
+    }
+}
+
+.item-special {
+    // border: 1px solid black;
+    position: relative;
+    height: 276px;
+
+    .card {
+        background-color: $gray-300;
+        border-radius: 15px;
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .img-special {
+        position: relative;
+        bottom: 0;
+    }
+
+    .desc-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .name-star {
+            p.name-product {
+                font-size: 18px;
+                font-weight: 500;
+                color: $black;
+            }
+        }
+
+        .disc-price {
+            .disc {
+                font-size: 13px;
+                color: $orange;
+            }
+
+            .price {
+                font-size: 16px;
+                color: $gray-600;
+            }
+        }
     }
 }

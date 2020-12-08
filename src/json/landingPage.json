@@ -1,0 +1,33 @@
+{
+    "hero": {
+        "travelers": 80409,
+        "treasures": 882,
+        "cities": 1492
+    },
+    "special": [
+        {
+            "_id": 1,
+            "name": "Suit gray",
+            "category": "woman",
+            "imageUrl": "/images/special-1-removebg.png",
+            "disc": 300000,
+            "price": 150000
+        },
+        {
+            "_id": 1,
+            "name": "Suit gray",
+            "category": "woman",
+            "imageUrl": "/images/special-2-removebg.png",
+            "disc": 300000,
+            "price": 150000
+        },
+        {
+            "_id": 1,
+            "name": "Suit gray",
+            "category": "woman",
+            "imageUrl": "/images/special-3-removebg.png",
+            "disc": 300000,
+            "price": 150000
+        }
+    ]
+}

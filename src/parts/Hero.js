@@ -2,13 +2,18 @@ import React from 'react'
 import HeroImg2 from 'assets/hero-removebg-preview.png'
 import Button from 'elements/Button'
 
-export default function Hero() {
 
-    const showSpecialProduct = () => {
-        alert('ok')
+export default function Hero(props) {
+
+    function showSpecialProduct() {
+        window.scrollTo({
+            top: props.refSpecialForYou.current.offsetTop - 30,
+            behavior: "smooth",
+        });
     }
+
     return (
-        <section className="pt-4 hero" >
+        <section className="pt-4 hero">
             <div className="container">
                 <div className="row align-item-center" style={{ width: "360" }}>
                     <div className="col-auto pr-5">

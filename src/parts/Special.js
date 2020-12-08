@@ -1,10 +1,10 @@
 import React from 'react'
 // import propTypes from 'prop-types'
+import formatNumber from 'utils/number'
 
-
-export default function Special({ data }) {
+export default function Special(props) {
     return (
-        <section className="container-fluid">
+        <section className="container-fluid" ref={props.refSpecialForYou} >
             <div className="row text-center header-section">
                 <div className="col">
                     <h4 className="title-section font-weight-normal">
@@ -15,7 +15,7 @@ export default function Special({ data }) {
             </div>
             <div className="row justify-content-center align-items-center my-2">
                 {
-                    data.map((item, index) => {
+                    props.data.map((item, index) => {
                         return (
 
                             <div className="col-3" key={index}>
@@ -32,10 +32,10 @@ export default function Special({ data }) {
                                         </div>
                                         <div className="disc-price">
                                             <strike>
-                                                <span className="disc font-weight-lighter">{`IDR.${item.disc}`}</span>
+                                                <span className="disc font-weight-lighter">{`IDR. ${formatNumber(item.disc)}`}</span>
                                             </strike>
                                             <br />
-                                            <span className=" price font-weight-light">{`IDR.${item.price}`}</span>
+                                            <span className=" price font-weight-light">{`IDR. ${formatNumber(item.price)}`}</span>
                                         </div>
                                     </div>
                                 </div>

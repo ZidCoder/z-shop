@@ -193,3 +193,111 @@ header {
         }
     }
 }
+
+.section-featured {
+    position: relative;
+
+    .index-1 {
+        background-color: $gray-300;
+        border-radius: 15px;
+        border: none;
+        height: 100%;
+        position: relative;
+
+        .label-name {
+            position: absolute;
+            bottom: 100px;
+            right: 5%;
+
+            .name-product {
+                font-size: 18px;
+                font-weight: 500;
+                color: $black;
+            }
+
+            .disc {
+                font-size: 12px;
+                color: $orange;
+            }
+
+            .price {
+                font-size: 14px;
+                color: $gray-600;
+            }
+
+        }
+
+        .footer-card {
+            background-color: $orange;
+            height: 80px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+
+    .index-n {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+
+        .label-name {
+            // position: absolute;
+            // bottom: 100px;
+            // right: 5%;
+            padding-right: 5px;
+
+            .name-product {
+                font-size: 18px;
+                font-weight: 500;
+                color: $black;
+            }
+
+            .disc {
+                font-size: 12px;
+                color: $orange;
+            }
+
+            .price {
+                font-size: 14px;
+                color: $gray-600;
+            }
+
+        }
+    }
+
+    .card-featured {
+        background-color: $gray-300;
+        border-radius: 15px;
+        border: none;
+        height: 100%;
+        position: relative;
+    }
+
+    .img-contain {
+        object-fit: contain;
+        width: 100%;
+    }
+
+    .img-cover {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .img-wrapper {
+        height: 100%;
+        margin-bottom: 0;
+        border-radius: 0.9375rem;
+        overflow: hidden;
+    }
+
+}

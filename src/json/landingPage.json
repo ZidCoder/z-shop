@@ -29,5 +29,63 @@
             "disc": 300000,
             "price": 150000
         }
+    ],
+    "featured": [
+        {
+            "_id": 10,
+            "name": "Suit gray",
+            "category": "woman",
+            "imageUrl": "/images/featured-1.jpg",
+            "disc": 300000,
+            "price": 150000
+        },
+        {
+            "_id": 11,
+            "name": "Suit gray",
+            "category": "woman",
+            "imageUrl": "/images/featured-2.jpg",
+            "disc": 300000,
+            "price": 150000
+        },
+        {
+            "_id": 13,
+            "name": "Suit gray",
+            "category": "woman",
+            "imageUrl": "/images/featured-3.jpg",
+            "disc": 300000,
+            "price": 150000
+        },
+        {
+            "_id": 14,
+            "name": "Suit gray",
+            "category": "woman",
+            "imageUrl": "/images/featured-4.jpg",
+            "disc": 300000,
+            "price": 150000
+        },
+        {
+            "_id": 15,
+            "name": "Suit gray",
+            "category": "woman",
+            "imageUrl": "/images/featured-5.jpg",
+            "disc": 300000,
+            "price": 150000
+        },
+        {
+            "_id": 16,
+            "name": "Suit gray",
+            "category": "woman",
+            "imageUrl": "/images/featured-6.jpg",
+            "disc": 300000,
+            "price": 150000
+        },
+        {
+            "_id": 17,
+            "name": "Suit gray",
+            "category": "woman",
+            "imageUrl": "/images/featured-7.jpg",
+            "disc": 300000,
+            "price": 150000
+        }
     ]
 }
